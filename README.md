@@ -1,2 +1,2 @@
 # BLOG
-Built with Django
+Built with Django and Bootstrap
