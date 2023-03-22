@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="text-center">{{post.title}}</h1>
+                <h5 class="text-center">{{post.subtitle}}</h5>
+                <div class="text-center">
+                    <img class="img-fluid img-thumbnail d-block" src="{{post.cover_image.url}}" alt="">
+                </div>
+                <p class="text-justify">{{post.description|safe}}</p>
+                <div class="d-flex justify-content-center">
+                    <a type="button" class="btn btn-danger" href="{% url 'delete_post' post.id %}?next=/post/{{post.id}}">Delete</a>
+                    <a type="button" class="btn btn-light mx-8" href="{% url 'update_post' post.id %}">Update</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
