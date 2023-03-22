@@ -1,5 +1,5 @@
 # BLOG
-This blog was built with python, django and bootstrap
+This blog was built with python, django and bootstrap.
 
 # On the main page are all the posts and the navigation bar to add new posts:
 
